@@ -1,0 +1,17 @@
+
+(fun (rec n)
+    (block
+        (make-vec 3 1)
+        (if (= n 0)
+            false
+            (vec (vec n) (rec (- n 1)))
+        )
+    )
+)
+
+(let ((x (rec input)))
+(block
+(gc)
+x
+)
+)

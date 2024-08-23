@@ -1,0 +1,1 @@
+(vec-get (vec 10 20 30 true false (vec 30) 10 20 3 12) input)

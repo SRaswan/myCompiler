@@ -1,0 +1,2 @@
+(fun (hello h e l o) (print 3))
+(mul)

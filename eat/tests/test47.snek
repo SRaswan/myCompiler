@@ -1,0 +1,21 @@
+(fun (fun1 a b c d)
+    (block
+      (set! d (+ a (+ b (+ d c))))
+      (fun2 (sub1 a) b c d 1)
+    )
+)
+(fun (fun2 a b c d e)
+  (if (= a b)
+      (loop 
+        (if (< c d)
+            (set! d (- d 1))
+            (break d)
+        )
+      )
+      (fun1 a b c d)
+  )
+)
+(block
+  (print input)
+  (fun2 input 3 1 5 1)
+)

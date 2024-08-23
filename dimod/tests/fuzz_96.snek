@@ -1,0 +1,6 @@
+(fun (our_code_starts_here energy a y e) (if (<= energy 0) -53 (block (set! energy (- energy 1)) "a")))
+(fun (main energy b f y x e z) (if (<= energy 0) true (block (set! energy (- energy 1)) (<= "b" (add1 (if (+ "b" "energy") (* "b" 7) (block "energy" true "b")))))))
+(fun (fun1 energy j c g x z) (if (<= energy 0) -40 (block (set! energy (- energy 1)) (add1 (+ (let ((a "z") (x (set! j true)) (c "c")) (block 38 "a" "j")) (let ((f "x")) (our_code_starts_here "f" "f" "g" -12)))))))
+(fun (fun2 energy g y i z) (if (<= energy 0) 25 (block (set! energy (- energy 1)) (* -81 (let ((z (fun3 (* "i" 10) (let ((j 88) (e "y")) -89) (set! z 50) (> "i" "energy") (> 59 27) (<= "i" "i"))) (j (set! energy (set! y "g")))) (set! y (* "j" "j")))))))
+(fun (fun3 energy i e b y j) (if (<= energy 0) true (block (set! energy (- energy 1)) (set! energy (set! e (if true true (block "y" 1 -10 "j")))))))
+-77

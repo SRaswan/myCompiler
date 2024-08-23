@@ -1,0 +1,16 @@
+(fun (const v i) 
+    (if (< i 0) 
+        v
+        (vec 1 2 (const v (sub1 i))) 
+    )
+)
+(fun (got v i)
+    (vec-get v i)
+)
+(let ((lst (vec 1 true))) 
+    (block
+        (set! lst (const lst (+ input 2)))
+        (print lst)
+        (got lst input)
+    )
+)

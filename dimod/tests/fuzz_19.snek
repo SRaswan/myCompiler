@@ -1,0 +1,3 @@
+(fun (our_code_starts_here energy a e) (if (<= energy 0) 44 (block (set! energy (- energy 1)) "a")))
+(fun (main energy) (if (<= energy 0) false (block (set! energy (- energy 1)) (< -85 (+ "energy" (* (* "energy" "energy") (block 87 true -30)))))))
+(main (let ((loop_var_169 (our_code_starts_here 68 false false))) (loop (if (> loop_var_169 (- (our_code_starts_here 68 false false) 169)) (block (set! loop_var_169 (- loop_var_169 1))) (break (set! loop_var_169 (let ((h (isnum (block (isnum false) (let ((d 78) (a false)) false) -1 (let ((h true)) -55) (> input 91))))) (set! h (our_code_starts_here (block "h" "loop_var_169" "loop_var_169" "loop_var_169" -73) (isbool "h") (main 5))))))))))

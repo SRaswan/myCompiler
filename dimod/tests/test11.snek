@@ -1,0 +1,26 @@
+(let ((x 20) (y input) (z 3)) 
+    (block
+        (loop 
+            (block
+                (if (> x input) (break y) (set! y (- y 1)))
+                (if (isbool (> y 28)) 
+                    (loop
+                        (block
+                            (let ((y 0))
+                                (block 
+                                    (set! x (+ 6 x))
+                                    (set! y (- z 1))
+                                    (if (< y 0) (break x) (sub1 2))
+                                )
+                            )
+                            (loop
+                                (if (< z 0) (break z) (set! z (sub1 z)))
+                            )
+                        )
+                    )
+                (isnum x))
+            )
+        )
+        x
+    )
+)

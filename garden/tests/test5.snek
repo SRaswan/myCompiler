@@ -1,0 +1,10 @@
+(fun (rec n)
+        (block
+            (make-vec 2 0)
+            (if (= n 0)
+                false 
+                (vec (vec n) (rec (- n 1))))
+        )
+    )
+
+(rec 3)

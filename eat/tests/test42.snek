@@ -1,0 +1,46 @@
+(let
+  ((input_value 0) (result 1) (counter 0))
+  (block
+    (set! input_value input)
+    (loop
+        (if (isnum input_value)
+            (block
+                (set! input_value (isbool input_value))
+                (if (= input_value false)
+                (block
+                    (loop
+                    (if (<= counter 7)
+                        (block
+                            (set! result (* result counter))
+                            (set! counter (+ counter 1))
+                            (set! input_value (= false input_value))
+                        )
+                        (if (= input_value true)
+                            (break 1)
+                            (block
+                            (set! input_value (isnum input_value))
+                            (if (= input_value true)
+                                (break input_value)
+                                (isbool input_value)
+                            )
+                            (if (= input_value true)
+                                (isnum input_value)
+                                (break input_value)
+                            )
+                            (if (= input_value false)
+                                (break input_value)
+                                (isbool input_value)
+                            )
+                            )
+                        )
+                    )
+                    )
+                )
+                (break result)
+                )
+            )
+            (break input_value)
+        )
+    )
+  )
+)

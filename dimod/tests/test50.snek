@@ -1,0 +1,2 @@
+(fun (fun1 a b c) (+ a b))
+(fun1 3 4)

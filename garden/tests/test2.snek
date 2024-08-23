@@ -1,0 +1,11 @@
+(let ((x (vec false true 17))
+      (y (vec 1 2))
+      (e (vec false 2))
+      (r (vec 1 y))
+      (b (vec 1 13)))
+     (block
+        (set! x (vec nil y nil))
+        (set! y (vec 3 4 1 2))
+        (set! b (vec 3))
+        (set! e y)
+        (gc)))

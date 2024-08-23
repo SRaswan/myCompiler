@@ -1,0 +1,13 @@
+(fun (head l) (vec-get l 0))
+
+(fun (tail l) (vec-get l 1))
+
+(fun (sum lst)
+ (let ((total 0))
+   (loop
+     (if (= lst false) (break total)
+       (block
+         (set! total (+ total (head lst)))
+         (set! lst (tail lst)))))))
+
+(sum (vec 10 (vec 20 (vec 30 false))))

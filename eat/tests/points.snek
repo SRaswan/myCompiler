@@ -1,0 +1,26 @@
+(fun (construct x y) 
+    (if (= 1 x)
+        (vec (sub1 x) (axis y))
+        (vec (sub1 x) (axis y) (construct (sub1 x) y))
+    )
+)
+(fun (axis y)
+    (if (= 1 y)
+        (vec (sub1 y))
+        (vec (sub1 y) (axis (sub1 y)))
+    )
+)
+
+(fun (combine p1 p2)
+    (vec (+ (vec-get p1 0) (vec-get p2 0)) (+ (vec-get p1 1) (vec-get p2 1)))
+)
+
+(fun (point x y)
+    (vec x y)
+)
+
+(block
+    (print (construct (+ 2 input) (+ 2 input)))
+    (combine (point input 2) (point 1 input))
+
+)

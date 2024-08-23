@@ -1,0 +1,20 @@
+(fun (bug) 
+   (if true 
+    (let ((x 0))
+
+    (loop
+        (block
+            (set! x (add1 x))
+            (if (> x 5) (break x) (print x))
+            (apple)
+        )
+    )
+
+    )
+    (print 407)
+   )
+)
+(fun (apple) 
+    (let ((x 2)) (print (add1 x)))
+)
+(bug)

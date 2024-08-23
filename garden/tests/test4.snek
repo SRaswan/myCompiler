@@ -1,0 +1,12 @@
+(fun (createVect n)
+        (block
+            (make-vec 17 231)
+            (make-vec 29 231)
+            (make-vec 0 0)
+            (if (= n 0)
+                false 
+                (vec (vec n) (createVect (- n 1))))
+        )
+    )
+
+(createVect 100)

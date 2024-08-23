@@ -1,0 +1,39 @@
+(fun (construct)
+        (vec 30 (vec 10 (vec 5 (vec 2) (vec 8)) (vec 11)) (vec 40))
+)
+
+(fun (search bst key)
+    (if (= (vec-get bst 0) key)
+        true
+        (if (= (vec-len bst) 1)
+            false 
+            (if (> (vec-get bst 0) key)
+                (search (vec-get bst 1) key)
+                (search (vec-get bst 2) key)
+            )
+        )
+    )
+)
+
+(fun (app curr key)
+    (if (= 0 (vec-get curr 0))
+        (vec key)
+        (if (= (vec-len curr) 1)
+            (if (< key (vec-get curr 0))
+                (vec (vec-get curr 0) (vec key) (vec 0))
+                (vec (vec-get curr 0) (vec 0) (vec key))
+            )
+            (if (< key (vec-get curr 0))
+                (vec (vec-get curr 0) (app (vec-get curr 1) key)  (vec-get curr 2))
+                (vec (vec-get curr 0) (vec-get curr 1) (app (vec-get curr 2) key))
+            )
+        )
+    )
+
+    
+)
+(if (print (search (construct) input))
+    true
+    (app (construct) input)
+)
+

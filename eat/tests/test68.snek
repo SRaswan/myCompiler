@@ -1,0 +1,7 @@
+(fun (app a b c d)
+    (print b)
+
+    
+)
+(let ((x 20) (v 20) (b 20)) 
+(app 5 30 70 69))

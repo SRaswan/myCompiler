@@ -1,0 +1,9 @@
+(fun (construct) 
+    (vec 3)
+)
+
+
+(block
+    (print (construct))
+
+)

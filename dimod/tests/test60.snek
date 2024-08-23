@@ -1,0 +1,3 @@
+(fun (lol) (hi 1 2))
+(fun (hi a b) (block (print a) (print b)))
+(block (lol) (print input))

@@ -1,0 +1,5 @@
+(fun (lol1) (lol3 33))
+(fun (lol2) (lol4 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26))
+(fun (lol3 a) (print a))
+(fun (lol4 a b c d e f g h i j k l m n o p q r s t u v w x y z) (block (print l) (print m) (print n) (print o) (print y) (print z)))
+(block (lol2) (lol1) (print input))

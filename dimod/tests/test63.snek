@@ -1,0 +1,7 @@
+(fun (main n acc)
+ (if (= n 0)
+ acc
+ (main (+ n -1) (+ acc n))))
+(fun (hey n)
+ (main n 0))
+(hey input)

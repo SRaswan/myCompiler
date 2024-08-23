@@ -1,0 +1,18 @@
+(let ((x 3)) 
+    (loop 
+        (block
+            (set! x (+ (- (* 3 4) 1) x))
+            (if (> x 100) (break x) (+ 3 2))
+            (if (isbool (< x 2)) 
+                (loop
+                    (let ((y 7))
+                        (block 
+                            (set! y (sub1 x))
+                            (if (< y 4) (break x) (break y))
+                        )
+                    )
+                )
+            (isnum x))
+        )
+    )
+)

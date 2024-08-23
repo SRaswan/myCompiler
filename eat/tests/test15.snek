@@ -1,0 +1,4 @@
+(block 
+    (let ((x 3)) x)
+    (set! x 3)
+)

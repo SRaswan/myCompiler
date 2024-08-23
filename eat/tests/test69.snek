@@ -1,0 +1,9 @@
+(fun (combine p1 p2)
+    (vec (+ (vec-get p1 0) (vec-get p2 0)) (+ (vec-get p1 1) (vec-get p2 1)))
+)
+
+(fun (point x y)
+    (vec x y)
+)
+
+(combine (point 2 3) (point 1 3))

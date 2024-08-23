@@ -1,0 +1,4 @@
+(fun (fun1 a b c)
+(sub1 input)
+)
+(print (fun1 1 2 3))
