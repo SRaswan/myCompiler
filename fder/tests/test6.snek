@@ -1,0 +1,16 @@
+(defn (fa p)
+  (block
+    (defn (fa x)
+        (p x)
+    )
+    (p 5)
+  )
+)
+(let* ((foo (fn (z) (+ z 7)))
+    (foo (fn (z) (+ z 4)))
+    (fa (fn (p) (p 27))
+    ))
+  (block
+    (print (fa foo))
+  )
+)

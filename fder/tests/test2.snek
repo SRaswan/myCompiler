@@ -1,0 +1,4 @@
+(defn (A a b c) (+ a (+ b c)))
+(defn (B a b c d) (+ a (+ (A 3 1 2) c)))
+(defn (C a b c d e) (let* ((a 0)) (* a (+ (B b 1 2 4) c))))
+(let* ((a 1)) (C a 2 3 4 5))

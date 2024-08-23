@@ -1,0 +1,9 @@
+(defn (hi a) 
+    (a 3)
+)
+(defn (big a b c)
+    (loop
+        (break 3)
+    )
+)
+(hi (big 3 2 2))

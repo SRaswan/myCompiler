@@ -1,0 +1,23 @@
+(defn (hi a b c d e f g) 
+    (block
+        (print (b 3 1))
+        (print (a 7 4))
+        (print (c 7 4))
+        (print (d 7 4))
+        (print (e 7 4))
+    )
+)
+(defn (big a b)
+    (loop
+        (break b)
+    )
+)
+(defn (hello a b)
+    a
+)
+(defn (heyy a b)
+    (block
+        3
+    )
+)
+(hi big hello heyy hello big 3 1)

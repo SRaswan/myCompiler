@@ -1,0 +1,7 @@
+(defn (fun1 a) 
+    (vec (a 1) (a 3))
+)
+(defn (fun2 a)
+    (* a 2)
+)
+(fun1 fun2)

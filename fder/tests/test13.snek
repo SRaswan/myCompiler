@@ -1,0 +1,2 @@
+(defn (f f) (vec 4 f))
+(f 4)

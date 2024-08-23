@@ -1,0 +1,13 @@
+(defn (f it)
+  (block
+
+      (defn (it f) (f 5))
+
+      (it 5)
+
+  )
+
+)
+(let (foo (fn (z) (* z 10))) 
+  (f foo)
+)

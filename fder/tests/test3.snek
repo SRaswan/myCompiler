@@ -1,0 +1,18 @@
+
+(if (<= input 3)
+    false
+    (let*
+        ((divisor 2))
+        (loop
+            (if (<= input (add1 (* divisor divisor)))
+                (break true)
+                (if (let*
+                        ((quotient 1))
+                        (loop
+                            (if (<= input (add1 (* divisor quotient)))
+                                (break false)
+                                (if (= (* divisor quotient) input)
+                                    (break true)
+                                    (set! quotient (+ quotient 1))))))
+                    (break false)
+                    (set! divisor (+ divisor 1)))))))

@@ -1,0 +1,12 @@
+(defn (compose f g) 
+  (fn (x) (f (g x))))
+
+(defn (inc x) 
+  (+ x 1))
+
+
+(let* (
+  (inc (fn (x) (+ x 1)))
+  (compose (fn (f g) (fn (x) (f (g x)))))
+  (f (compose inc inc)))
+  (f input))

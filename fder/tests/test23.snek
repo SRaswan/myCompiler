@@ -1,0 +1,31 @@
+(let*
+  ((x 10) (y 20) (z 30))
+  (block
+    (set! x (* x 2))
+    (set! y (+ y x))
+    (if (> y z)
+        (block
+          (set! y (- y z))
+          (let*
+            ((result (* x y)))
+            (if (= result 200)
+                (let*
+                  ((i 0))
+                  (loop
+                    (if (>= i 5)
+                        (break result)
+                        (block
+                          (set! result (+ result i))
+                          (set! i (+ i 1))
+                        )
+                    )
+                  )
+                )
+                0
+            )
+          )
+        )
+        z
+    )
+  )
+)

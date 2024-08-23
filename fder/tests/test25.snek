@@ -1,0 +1,25 @@
+(defn (bug) 
+   (if true 
+    (let* ((x 0))
+
+    (loop
+        (block
+            (set! x (add1 x))
+            (if (> x 5) (break x) (print x))
+            (let* ((apple 
+                (fn () (let* ((x 2))
+                (print (add1 x))))))
+                (apple)
+            )
+            
+        )
+    )
+
+    )
+    (print 407)
+   )
+)
+(defn (apple) 
+    (let* ((x 2)) (print (add1 x)))
+)
+(bug)

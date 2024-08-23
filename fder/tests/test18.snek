@@ -1,0 +1,14 @@
+(defn (f1 a) 
+    (block 
+        (set! f1 1)
+        f1
+    )
+)
+
+(defn (f f) (set! f 37))
+
+(block
+
+(print (f 3))
+(print (f1 3))
+)

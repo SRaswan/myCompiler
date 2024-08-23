@@ -1,0 +1,7 @@
+
+(defn (fa p)
+    (let (bug (defn (hi x) p))
+        (bug 3)
+    )
+)
+(fa 45)

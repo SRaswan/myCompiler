@@ -1,0 +1,7 @@
+(defn (fun a b c)
+    a
+)
+(defn (fun1 b)
+    b
+)
+(fun1 (fun 3 4 5))

@@ -1,0 +1,4 @@
+(defn (bruh) 3)
+(let* ((hi (fn () 8)))
+    (+ (bruh) (hi))
+)

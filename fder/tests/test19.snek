@@ -1,0 +1,10 @@
+(defn (bug a) (a 3))
+(defn (lol a b) (b a))
+
+(let* ((hi (fn (z) (+ z 3))) (bru (fn (z) (+ z 78))))
+    (block
+    (bug hi)
+    (bug bru)
+    (lol 7 bru)
+    )
+)
